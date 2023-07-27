@@ -1,5 +1,6 @@
 class Affiliation < ApplicationRecord
-  belongs_to :person
+  has_many :person, through: :person_affiliations
+  has_many :person_affiliations
 
   before_save :titleize_name
 

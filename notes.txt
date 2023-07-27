@@ -15,5 +15,5 @@ Affiliations
   - name
 
 
-Person -< Location
-Person -< Affiliations
+Person -< Location (Has Many through)
+Person -< Affiliations (Has Mnay Through)
