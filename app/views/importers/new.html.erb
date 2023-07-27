@@ -1,5 +1,11 @@
 <h1>Please import CSV here</h1>
 
 <%= form_tag importer_path, multipart: true do %>
-  <%= file_field_tag :csv %>
+  <div>
+    <%= file_field_tag :csv %>
+  </div>
+
+  <div>
+    <%= submit_tag :submit %>
+  </div>
 <% end %>
