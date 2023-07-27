@@ -7,7 +7,7 @@ class Importer
   end
 
   def run
-    csv.each do |row|
+    CSV.foreach(@file, headers: true) do |row|
       next if row['Affiliations'].blank?
 
       person = build_person(row)
@@ -59,9 +59,5 @@ class Importer
     affiliations_row = row['Affiliations'].split(',')
 
     affiliations_row.map { |aff_name| aff_name }
-  end
-
-  def csv
-    @csv ||= CSV.parse(@file, headers: true)
   end
 end
