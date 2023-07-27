@@ -15,7 +15,7 @@ class Person < ApplicationRecord
     end
 
     if last_name.present?
-      self.last_name = first_name.split(' ').map(&:upcase_first).join(' ')
+      self.last_name = last_name.split(' ').map(&:upcase_first).join(' ')
     end
   end
 end

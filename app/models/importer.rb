@@ -37,11 +37,11 @@ class Importer
 
     ActiveRecord::Base.transaction do
       locations = data[:locations].map do |l|
-        Location.find_or_create_by!(name: l)
+        Location.find_or_create_by!(name: l.titleize)
       end
 
       affiliations = data[:affiliations].map do |a|
-        Affiliation.find_or_create_by!(name: a) 
+        Affiliation.find_or_create_by!(name: a.titleize)
       end
 
       person.locations = locations
@@ -57,7 +57,7 @@ class Importer
 
   def build_person(row)
     Person.new.tap do |person|
-      first_name, last_name = row['Name'].split(' ')
+      first_name, last_name = row['Name'].split(' ', 2)
 
       person.first_name = first_name
       person.last_name = last_name
