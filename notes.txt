@@ -1,7 +1,7 @@
 Models
 
 People
-  - first_name
+  - first_name - required
   - last_name
   - weapon
   - vehicle
