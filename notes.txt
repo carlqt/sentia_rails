@@ -7,8 +7,12 @@ People
   - vehicle
   - gender
   - species
+
 Locations
+  - name
+
 Affiliations
+  - name
 
 
 Person -< Location
