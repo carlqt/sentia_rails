@@ -1,0 +1,37 @@
+<div class='container h-screen'>
+  <h1 class='text-5xl font-extrabold'>Persons#index</h1>
+  <p>Find me in app/views/persons/index.html.erb</p>
+
+
+<div class="relative overflow-x-auto">
+    <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
+        <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+            <tr>
+                <th scope="col" class="px-6 py-3">
+                    First Name
+                </th>
+                <th scope="col" class="px-6 py-3">
+                    Last Name
+                </th>
+                <th scope="col" class="px-6 py-3">
+                    Weapon
+                </th>
+                <th scope="col" class="px-6 py-3">
+                    Vehicle
+                </th>
+                <th scope="col" class="px-6 py-3">
+                    Species
+                </th>
+                <th scope="col" class="px-6 py-3">
+                    Gender
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+          <%= render partial: :person, collection: @people %>
+        </tbody>
+    </table>
+</div>
+
+
+</div>

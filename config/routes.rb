@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  resources :persons, only: :index
+  resources :people, only: :index
   resource :importer, only: [:create, :new]
 
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
