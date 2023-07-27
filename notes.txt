@@ -1,0 +1,15 @@
+Models
+
+People
+  - first_name
+  - last_name
+  - weapon
+  - vehicle
+  - gender
+  - species
+Locations
+Affiliations
+
+
+Person -< Location
+Person -< Affiliations
