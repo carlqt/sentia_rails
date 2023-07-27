@@ -1,0 +1,364 @@
+class Person < ::ApplicationRecord
+  extend _ActiveRecord_Relation_ClassMethods[Person, ActiveRecord_Relation, Integer]
+
+  module GeneratedAttributeMethods
+    def id: () -> Integer
+
+    def id=: (Integer) -> Integer
+
+    def id?: () -> bool
+
+    def id_changed?: () -> bool
+
+    def id_change: () -> [ Integer?, Integer? ]
+
+    def id_will_change!: () -> void
+
+    def id_was: () -> Integer?
+
+    def id_previously_changed?: () -> bool
+
+    def id_previous_change: () -> Array[Integer?]?
+
+    def id_previously_was: () -> Integer?
+
+    def id_before_last_save: () -> Integer?
+
+    def id_change_to_be_saved: () -> Array[Integer?]?
+
+    def id_in_database: () -> Integer?
+
+    def saved_change_to_id: () -> Array[Integer?]?
+
+    def saved_change_to_id?: () -> bool
+
+    def will_save_change_to_id?: () -> bool
+
+    def restore_id!: () -> void
+
+    def clear_id_change: () -> void
+
+    def first_name: () -> String?
+
+    def first_name=: (String?) -> String?
+
+    def first_name?: () -> bool
+
+    def first_name_changed?: () -> bool
+
+    def first_name_change: () -> [ String?, String? ]
+
+    def first_name_will_change!: () -> void
+
+    def first_name_was: () -> String?
+
+    def first_name_previously_changed?: () -> bool
+
+    def first_name_previous_change: () -> Array[String?]?
+
+    def first_name_previously_was: () -> String?
+
+    def first_name_before_last_save: () -> String?
+
+    def first_name_change_to_be_saved: () -> Array[String?]?
+
+    def first_name_in_database: () -> String?
+
+    def saved_change_to_first_name: () -> Array[String?]?
+
+    def saved_change_to_first_name?: () -> bool
+
+    def will_save_change_to_first_name?: () -> bool
+
+    def restore_first_name!: () -> void
+
+    def clear_first_name_change: () -> void
+
+    def last_name: () -> String?
+
+    def last_name=: (String?) -> String?
+
+    def last_name?: () -> bool
+
+    def last_name_changed?: () -> bool
+
+    def last_name_change: () -> [ String?, String? ]
+
+    def last_name_will_change!: () -> void
+
+    def last_name_was: () -> String?
+
+    def last_name_previously_changed?: () -> bool
+
+    def last_name_previous_change: () -> Array[String?]?
+
+    def last_name_previously_was: () -> String?
+
+    def last_name_before_last_save: () -> String?
+
+    def last_name_change_to_be_saved: () -> Array[String?]?
+
+    def last_name_in_database: () -> String?
+
+    def saved_change_to_last_name: () -> Array[String?]?
+
+    def saved_change_to_last_name?: () -> bool
+
+    def will_save_change_to_last_name?: () -> bool
+
+    def restore_last_name!: () -> void
+
+    def clear_last_name_change: () -> void
+
+    def weapon: () -> String?
+
+    def weapon=: (String?) -> String?
+
+    def weapon?: () -> bool
+
+    def weapon_changed?: () -> bool
+
+    def weapon_change: () -> [ String?, String? ]
+
+    def weapon_will_change!: () -> void
+
+    def weapon_was: () -> String?
+
+    def weapon_previously_changed?: () -> bool
+
+    def weapon_previous_change: () -> Array[String?]?
+
+    def weapon_previously_was: () -> String?
+
+    def weapon_before_last_save: () -> String?
+
+    def weapon_change_to_be_saved: () -> Array[String?]?
+
+    def weapon_in_database: () -> String?
+
+    def saved_change_to_weapon: () -> Array[String?]?
+
+    def saved_change_to_weapon?: () -> bool
+
+    def will_save_change_to_weapon?: () -> bool
+
+    def restore_weapon!: () -> void
+
+    def clear_weapon_change: () -> void
+
+    def vehicle: () -> String?
+
+    def vehicle=: (String?) -> String?
+
+    def vehicle?: () -> bool
+
+    def vehicle_changed?: () -> bool
+
+    def vehicle_change: () -> [ String?, String? ]
+
+    def vehicle_will_change!: () -> void
+
+    def vehicle_was: () -> String?
+
+    def vehicle_previously_changed?: () -> bool
+
+    def vehicle_previous_change: () -> Array[String?]?
+
+    def vehicle_previously_was: () -> String?
+
+    def vehicle_before_last_save: () -> String?
+
+    def vehicle_change_to_be_saved: () -> Array[String?]?
+
+    def vehicle_in_database: () -> String?
+
+    def saved_change_to_vehicle: () -> Array[String?]?
+
+    def saved_change_to_vehicle?: () -> bool
+
+    def will_save_change_to_vehicle?: () -> bool
+
+    def restore_vehicle!: () -> void
+
+    def clear_vehicle_change: () -> void
+
+    def gender: () -> String?
+
+    def gender=: (String?) -> String?
+
+    def gender?: () -> bool
+
+    def gender_changed?: () -> bool
+
+    def gender_change: () -> [ String?, String? ]
+
+    def gender_will_change!: () -> void
+
+    def gender_was: () -> String?
+
+    def gender_previously_changed?: () -> bool
+
+    def gender_previous_change: () -> Array[String?]?
+
+    def gender_previously_was: () -> String?
+
+    def gender_before_last_save: () -> String?
+
+    def gender_change_to_be_saved: () -> Array[String?]?
+
+    def gender_in_database: () -> String?
+
+    def saved_change_to_gender: () -> Array[String?]?
+
+    def saved_change_to_gender?: () -> bool
+
+    def will_save_change_to_gender?: () -> bool
+
+    def restore_gender!: () -> void
+
+    def clear_gender_change: () -> void
+
+    def species: () -> String?
+
+    def species=: (String?) -> String?
+
+    def species?: () -> bool
+
+    def species_changed?: () -> bool
+
+    def species_change: () -> [ String?, String? ]
+
+    def species_will_change!: () -> void
+
+    def species_was: () -> String?
+
+    def species_previously_changed?: () -> bool
+
+    def species_previous_change: () -> Array[String?]?
+
+    def species_previously_was: () -> String?
+
+    def species_before_last_save: () -> String?
+
+    def species_change_to_be_saved: () -> Array[String?]?
+
+    def species_in_database: () -> String?
+
+    def saved_change_to_species: () -> Array[String?]?
+
+    def saved_change_to_species?: () -> bool
+
+    def will_save_change_to_species?: () -> bool
+
+    def restore_species!: () -> void
+
+    def clear_species_change: () -> void
+
+    def created_at: () -> ActiveSupport::TimeWithZone
+
+    def created_at=: (ActiveSupport::TimeWithZone) -> ActiveSupport::TimeWithZone
+
+    def created_at?: () -> bool
+
+    def created_at_changed?: () -> bool
+
+    def created_at_change: () -> [ ActiveSupport::TimeWithZone?, ActiveSupport::TimeWithZone? ]
+
+    def created_at_will_change!: () -> void
+
+    def created_at_was: () -> ActiveSupport::TimeWithZone?
+
+    def created_at_previously_changed?: () -> bool
+
+    def created_at_previous_change: () -> Array[ActiveSupport::TimeWithZone?]?
+
+    def created_at_previously_was: () -> ActiveSupport::TimeWithZone?
+
+    def created_at_before_last_save: () -> ActiveSupport::TimeWithZone?
+
+    def created_at_change_to_be_saved: () -> Array[ActiveSupport::TimeWithZone?]?
+
+    def created_at_in_database: () -> ActiveSupport::TimeWithZone?
+
+    def saved_change_to_created_at: () -> Array[ActiveSupport::TimeWithZone?]?
+
+    def saved_change_to_created_at?: () -> bool
+
+    def will_save_change_to_created_at?: () -> bool
+
+    def restore_created_at!: () -> void
+
+    def clear_created_at_change: () -> void
+
+    def updated_at: () -> ActiveSupport::TimeWithZone
+
+    def updated_at=: (ActiveSupport::TimeWithZone) -> ActiveSupport::TimeWithZone
+
+    def updated_at?: () -> bool
+
+    def updated_at_changed?: () -> bool
+
+    def updated_at_change: () -> [ ActiveSupport::TimeWithZone?, ActiveSupport::TimeWithZone? ]
+
+    def updated_at_will_change!: () -> void
+
+    def updated_at_was: () -> ActiveSupport::TimeWithZone?
+
+    def updated_at_previously_changed?: () -> bool
+
+    def updated_at_previous_change: () -> Array[ActiveSupport::TimeWithZone?]?
+
+    def updated_at_previously_was: () -> ActiveSupport::TimeWithZone?
+
+    def updated_at_before_last_save: () -> ActiveSupport::TimeWithZone?
+
+    def updated_at_change_to_be_saved: () -> Array[ActiveSupport::TimeWithZone?]?
+
+    def updated_at_in_database: () -> ActiveSupport::TimeWithZone?
+
+    def saved_change_to_updated_at: () -> Array[ActiveSupport::TimeWithZone?]?
+
+    def saved_change_to_updated_at?: () -> bool
+
+    def will_save_change_to_updated_at?: () -> bool
+
+    def restore_updated_at!: () -> void
+
+    def clear_updated_at_change: () -> void
+  end
+  include GeneratedAttributeMethods
+  def person_locations: () -> PersonLocation::ActiveRecord_Associations_CollectionProxy
+  def person_locations=: (PersonLocation::ActiveRecord_Associations_CollectionProxy | Array[PersonLocation]) -> (PersonLocation::ActiveRecord_Associations_CollectionProxy | Array[PersonLocation])
+  def person_location_ids: () -> Array[Integer]
+  def person_location_ids=: (Array[Integer]) -> Array[Integer]
+  def locations: () -> Location::ActiveRecord_Associations_CollectionProxy
+  def locations=: (Location::ActiveRecord_Associations_CollectionProxy | Array[Location]) -> (Location::ActiveRecord_Associations_CollectionProxy | Array[Location])
+  def location_ids: () -> Array[Integer]
+  def location_ids=: (Array[Integer]) -> Array[Integer]
+  def person_affiliations: () -> PersonAffiliation::ActiveRecord_Associations_CollectionProxy
+  def person_affiliations=: (PersonAffiliation::ActiveRecord_Associations_CollectionProxy | Array[PersonAffiliation]) -> (PersonAffiliation::ActiveRecord_Associations_CollectionProxy | Array[PersonAffiliation])
+  def person_affiliation_ids: () -> Array[Integer]
+  def person_affiliation_ids=: (Array[Integer]) -> Array[Integer]
+  def affiliations: () -> Affiliation::ActiveRecord_Associations_CollectionProxy
+  def affiliations=: (Affiliation::ActiveRecord_Associations_CollectionProxy | Array[Affiliation]) -> (Affiliation::ActiveRecord_Associations_CollectionProxy | Array[Affiliation])
+  def affiliation_ids: () -> Array[Integer]
+  def affiliation_ids=: (Array[Integer]) -> Array[Integer]
+
+  module GeneratedAssociationMethods
+  end
+  include GeneratedAssociationMethods
+
+  module GeneratedRelationMethods
+  end
+
+  class ActiveRecord_Relation < ::ActiveRecord::Relation
+    include GeneratedRelationMethods
+    include _ActiveRecord_Relation[Person, Integer]
+    include Enumerable[Person]
+  end
+
+  class ActiveRecord_Associations_CollectionProxy < ::ActiveRecord::Associations::CollectionProxy
+    include GeneratedRelationMethods
+    include _ActiveRecord_Relation[Person, Integer]
+  end
+end
