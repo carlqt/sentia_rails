@@ -11,7 +11,16 @@ class Importer
       person = build_person(row)
       locations = build_location(row)
       affiliations = build_affiliation(row)
+
+      @data_list << { person: person, locations: locations, affiliations: affilications }
     end
+
+    @data_list.each do |data|
+      insert_to_db!(data)
+    end
+  end
+
+  def insert_to_db!
   end
 
   def build_person(row)

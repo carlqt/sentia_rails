@@ -1,5 +1,6 @@
 class Location < ApplicationRecord
-  belongs_to :person
+  has_many :person, through: :person_locations
+  has_many :person_locations
 
   before_save :titleize_name
 
