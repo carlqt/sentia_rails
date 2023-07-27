@@ -61,10 +61,10 @@ class Importer
 
       person.first_name = first_name
       person.last_name = last_name
-      person.species = row['Species']
-      person.gender = row['Gender']
-      person.weapon = row['Weapon']
-      person.vehicle = row['Vehicle']
+      person.species = row['Species']&.downcase
+      person.gender = row['Gender']&.downcase
+      person.weapon = row['Weapon']&.downcase
+      person.vehicle = row['Vehicle']&.downcase
     end
   end
 
@@ -77,6 +77,6 @@ class Importer
   def build_affiliation(row)
     affiliations_row = row['Affiliations'].split(',')
 
-    affiliations_row.map { |aff_name| aff_name }
+    affiliations_row.map { |aff_name| aff_name.downcase }
   end
 end

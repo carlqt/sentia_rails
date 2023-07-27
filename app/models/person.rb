@@ -1,4 +1,6 @@
 class Person < ApplicationRecord
+  include Queryable
+
   has_many :person_locations
   has_many :locations, through: :person_locations
 
