@@ -1,52 +1,43 @@
-<div class='container h-screen'>
+<div class='container h-screen flex-row space-y-8'>
   <h1 class='text-5xl font-extrabold'>Persons#index</h1>
   <p>Find me in app/views/persons/index.html.erb</p>
-
-<form class="flex flex-col md:flex-row gap-3">
+  <form class="flex flex-col md:flex-row gap-3">
     <div class="flex">
-        <input type="text" placeholder="Search..."
-			class="w-full md:w-80 px-3 h-10 rounded-l border-2 border-sky-500 focus:outline-none focus:border-sky-500"
-			>
-        <button type="submit" class="bg-sky-500 text-white rounded-r px-2 md:px-3 py-0 md:py-1">Search</button>
+      <%= text_field_tag :search, nil, placeholder: "Search...", class: "w-full md:w-80 px-3 h-10 rounded-l border-2 border-sky-500 focus:outline-none focus:border-sky-500" %>
+      <button type="submit" class="bg-sky-500 text-white rounded-r px-2 md:px-3 py-0 md:py-1">Search</button>
     </div>
-    <select id="pricingType" name="pricingType"
-		class="w-full h-10 border-2 border-sky-500 focus:outline-none focus:border-sky-500 text-sky-500 rounded px-2 md:px-3 py-0 md:py-1 tracking-wider">
-		<option value="All" selected="">All</option>
-		<option value="Freemium">Freemium</option>
-		<option value="Free">Free</option>
-		<option value="Paid">Paid</option>
-	</select>
-</form>
-
-<div class="relative overflow-x-auto">
+    <%= select_tag "category", options_for_select(@categories, @categories.first) %>
+  </form>
+  <div class='border-2 border-gray-400'>
+    <%= paginate @people %>
+  </div>
+  <div class="relative overflow-x-auto">
     <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
-        <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
-            <tr>
-                <th scope="col" class="px-6 py-3">
-                    First Name
-                </th>
-                <th scope="col" class="px-6 py-3">
-                    Last Name
-                </th>
-                <th scope="col" class="px-6 py-3">
-                    Weapon
-                </th>
-                <th scope="col" class="px-6 py-3">
-                    Vehicle
-                </th>
-                <th scope="col" class="px-6 py-3">
-                    Species
-                </th>
-                <th scope="col" class="px-6 py-3">
-                    Gender
-                </th>
-            </tr>
-        </thead>
-        <tbody>
-          <%= render partial: :person, collection: @people %>
-        </tbody>
+      <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+        <tr>
+          <th scope="col" class="px-6 py-3">
+            First Name
+          </th>
+          <th scope="col" class="px-6 py-3">
+            Last Name
+          </th>
+          <th scope="col" class="px-6 py-3">
+            Weapon
+          </th>
+          <th scope="col" class="px-6 py-3">
+            Vehicle
+          </th>
+          <th scope="col" class="px-6 py-3">
+            Species
+          </th>
+          <th scope="col" class="px-6 py-3">
+            Gender
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <%= render partial: :person, collection: @people %>
+      </tbody>
     </table>
-</div>
-
-
+  </div>
 </div>

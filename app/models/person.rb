@@ -1,5 +1,6 @@
 class Person < ApplicationRecord
   include Queryable
+  paginates_per 10
 
   has_many :person_locations
   has_many :locations, through: :person_locations

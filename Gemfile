@@ -76,3 +76,7 @@ end
 gem "tailwindcss-rails", "~> 2.0"
 
 gem "motor-admin", "~> 0.4.20"
+
+gem "kaminari", "~> 1.2"
+
+gem "htmlbeautifier"

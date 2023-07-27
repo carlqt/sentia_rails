@@ -3,6 +3,10 @@ module Queryable
 
   class_methods do
     def search(category:, string:)
+      if string.blank?
+        return self.all
+      end
+
       where_statement = {}
       where_statement[category] = string
 
