@@ -1,24 +1,26 @@
-# README
+# Run Application
+Use docker to easily start the application
+```
+docker build . -t sentia_rails
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+docker run -p 3000:3000 sentia_rails
+```
+Then visit the application at http://localhost:3000
 
-Things you may want to cover:
+# Description
 
-* Ruby version
+## Routes
+- `/importer/new` - Path where the CSV importer is located
+- `/people` - Path that shows the data of the People table
+- `/affiliations` - Path that shows Affiliations data
+- `/locations` - Path that shows Locations data
+- `/motor_admin` - Admin Page from the `moto_admin` gem
 
-* System dependencies
+## Gems used
+- motor admin
+- tailwindcss
+- pry-rails
+- kaminari
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Screenshots
+![Alt text](image.png)
