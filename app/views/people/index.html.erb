@@ -17,13 +17,13 @@
         <tr>
           <% @categories.each do |c| %>
             <th scope="col" class="px-6 py-3">
-              <%= c.titleize %>
+              <%= link_to c.titleize, sort: c %>
             </th>
           <% end %>
         </tr>
       </thead>
       <tbody>
-        <%= render partial: :person, collection: @people %>
+        <%= render partial: :person, collection: @people, locals: { categories: @categories } %>
       </tbody>
     </table>
   </div>

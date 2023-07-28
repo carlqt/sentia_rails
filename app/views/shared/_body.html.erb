@@ -1,0 +1,10 @@
+<form class="flex flex-col md:flex-row gap-3">
+  <div class="flex">
+    <%= text_field_tag :search, nil, placeholder: "Search...", class: "w-full md:w-80 px-3 h-10 rounded-l border-2 border-sky-500 focus:outline-none focus:border-sky-500" %>
+    <button type="submit" class="bg-sky-500 text-white rounded-r px-2 md:px-3 py-0 md:py-1">Search</button>
+  </div>
+  <%= select_tag "category", options_for_select(categories, categories.first) %>
+
+</form>
+
+<%= render partial: 'shared/table', locals: { resources: resources, categories: categories } %>
